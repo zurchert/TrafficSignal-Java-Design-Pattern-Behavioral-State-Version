@@ -5,6 +5,7 @@ public class TrafficSignal extends Thread implements TrafficSignalContext, Traff
 {
 	private TrafficSignalState state;
 
+	
 	@Override
 	public void setTrafficSignalState(TrafficSignalState state)
 	{
@@ -35,4 +36,11 @@ public class TrafficSignal extends Thread implements TrafficSignalContext, Traff
 		}
 	}
 	
+	public void registerObserver(TrafficSignalColorChangeObserver TSO){
+		
+	}
+	
+	public void unregisterObserver(TrafficSignalColorChangeObserver TSO){
+		
+	}
 }
